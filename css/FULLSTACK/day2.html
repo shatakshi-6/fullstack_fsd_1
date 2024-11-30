@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal and External CSS Example</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Internal CSS -->
+  <style>
+    /* Internal CSS for Navigation Bar */
+    .navbar {
+      background-color: #3498db; /* Primary Color */
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Internal CSS for Footer */
+    .footer {
+      background-color: #2ecc71; /* Secondary Color */
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Product Cards Section -->
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Product 1">
+      <h2>Product 1</h2>
+      <p>This is a description of Product 1.</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Product 2">
+      <h2>Product 2</h2>
+      <p>This is a description of Product 2.</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="Product 3">
+        <h2>Product 3</h2>
+        <p>This is a description of Product 3.</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2024 My Website. All Rights Reserved.
+    </footer>
+  </body>
+  </html>
